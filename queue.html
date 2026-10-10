@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Queue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Place name and colour depend on the roll number -->
+    <header>
+        <h1 id="place">Rameen's Place</h1>
+    </header>
+
+    <main>
+        <p id="status"><strong>Welcome! Add a person to the queue.</strong></p>
+
+        <h2>Waiting Board</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Minutes</th>
+                    <th>Bay</th>
+                </tr>
+            </thead>
+            <tbody id="board"></tbody>
+        </table>
+
+        <form id="wait">
+            <h2>Customer Desk</h2>
+
+            <label for="who">Name</label>
+            <input type="text" id="who" name="who">
+
+            <label for="mins">Minutes</label>
+            <input type="text" id="mins" name="mins" inputmode="decimal">
+
+            <label for="bay">Bay</label>
+            <select id="bay" name="bay">
+                <option value="Bay 1">Bay 1</option>
+                <option value="Bay 2">Bay 2</option>
+            </select>
+
+            <button type="submit" id="join">Join</button>
+            <button type="button" id="call">Call Next</button>
+        </form>
+        <br>
+        <section class="figures">
+            <p>Waiting: <span id="waiting">0</span></p>
+            <p>Longest: <span id="longest">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        Roll Number: 247249
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

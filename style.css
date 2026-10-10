@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #303b4d;
+}
+
+/* Header */
+header {
+    background: #203a5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #b8c6d9;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Main content */
+main {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    background: white;
+    border: 1px solid #dce2ea;
+    border-radius: 8px;
+}
+
+/* Section headings */
+h2 {
+    color: #203a5f;
+    margin-bottom: 15px;
+}
+
+/* Status message */
+#status {
+    background: #edf2f7;
+    color: #203a5f;
+    padding: 12px;
+    border-left: 4px solid #203a5f;
+    border-radius: 4px;
+}
+
+/* Queue table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0 25px;
+}
+
+th {
+    background: #203a5f;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #dce2ea;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5f7fa;
+}
+
+/* Form fields */
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc8d6;
+    border-radius: 4px;
+    background: white;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 1px solid #203a5f;
+}
+
+/* Buttons */
+button {
+    padding: 10px 17px;
+    margin-top: 16px;
+    margin-right: 6px;
+    background: #203a5f;
+    color: white;
+    border: 1px solid #203a5f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #304f77;
+}
+
+/* Queue figures */
+.figures {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.figures p {
+    flex: 1;
+    padding: 15px;
+    margin: 0;
+    background: #edf2f7;
+    color: #203a5f;
+    border: 1px solid #dce2ea;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #203a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    main {
+        margin: 12px;
+        padding: 15px;
+    }
+
+    .figures {
+        flex-direction: column;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
